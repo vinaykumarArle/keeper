@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e4f9ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    background-color: #00bcd4;
+    font-family: 'Molle', cursive;
+    padding: 1rem 1.8rem;
+    color: #fff;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.637);
+}
+
+.newnote{
+    background-color: #fff;
+    margin: 3rem 20rem;
+    width: fit-content;
+    padding: 1rem 1rem;
+    position: relative;
+    border-radius: 1rem;
+    
+}
+::placeholder{
+    font-size: 1.4rem;
+}
+.newnote>input{
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 100%;
+    
+}
+.newnote>textarea{
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+.newnote>input,textarea:focus{
+    outline: none;
+}
+.newnote button:hover{
+    background-color:#00bcd4;
+    color: white;
+}
+.newnote button, .note button:focus{
+    outline: none;
+}
+.newnote>button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    color: #00bcd4;
+    background-color: white;
+    margin-right: 1rem;
+    margin-bottom: -1rem;
+}
+
+.note{
+    border-radius: 1rem;
+    box-shadow: -1px -1px 20px rgba(0, 0, 0, 0.151);
+    position: relative;
+    height: fit-content;
+    width: 250px;
+    padding: 1.5rem;
+    margin: 2rem;
+    text-align: left;
+    display: inline-block;
+    background-color: #fff;
+}
+.note h1{
+    font-size: 1.2rem;
+}
+.note p{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 50%;
+    font-weight: bold;
+}
+.note button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+    border: none;
+    background-color: transparent;
+    color: #dd2c00;
+}
+
+.note button:hover{
+    color: #ff5722;
+}
+
+
+.footer{
+    opacity: 40%;
+    bottom: 1rem;
+    text-align: center;
+}
